@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Git clone app') {
+        stage('Clone app') {
             steps {
                 git branch: 'main', url: 'https://github.com/jmvigueras/jenkins-sample'
             }
