@@ -18,7 +18,7 @@ pipeline {
         stage('Build image') {
             steps {
                 sh '''
-                docker build -f dockerfile . -t web-server-python
+                docker build -f Dockerfile . -t web-server-python
                 '''
             }
         }
