@@ -4,3 +4,5 @@ id:
   org: 6b3ab84a-465a-4087-9b62-f45d108b90bc
   app: 55943f3a-adfc-4b51-a0c9-65e76db5ea35
 
+dast:
+  url: http://54.220.40.82:8000
