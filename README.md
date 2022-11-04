@@ -1,4 +1,4 @@
-# FortiDevSec Jenkins Papile sample
+# FortiDevSec Jenkins Pipeline sample
 ## FortiDevSec
 
 [FortiDevSec User Guide](https://docs.fortinet.com/document/fortidevsec/22.3.0/user-guide/546812/introduction)
