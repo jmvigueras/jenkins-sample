@@ -2,7 +2,7 @@ version: v1
 
 id:
   org: 6b3ab84a-465a-4087-9b62-f45d108b90bc
-  app: 7cb1586d-8a67-42de-97fa-52a23d4d0bca
+  app: 2d4cdf0f-0a97-4ad1-87e7-e076924dec1f
 
 dast:
   url: http://54.220.40.82:8000
