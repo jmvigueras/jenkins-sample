@@ -15,15 +15,6 @@ pipeline {
                 '''
             }
         }
-        stage('DAST FortiPentest') {
-            steps {
-                sh '''
-                env | grep -E "JENKINS_HOME|BUILD_ID|GIT_BRANCH|GIT_COMMIT" > /tmp/env
-                docker pull registry.fortidevsec.forticloud.com/fdevsec_dast:latest
-                docker run --rm --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest
-                '''
-            }
-        }
         stage('Build image') {
             steps {
                 sh '''
@@ -35,6 +26,15 @@ pipeline {
             steps {
                 sh '''
                 docker run -p 8000:80 --rm -d --name web-server-python web-server-python
+                '''
+            }
+        }
+        stage('DAST FortiPentest') {
+            steps {
+                sh '''
+                env | grep -E "JENKINS_HOME|BUILD_ID|GIT_BRANCH|GIT_COMMIT" > /tmp/env
+                docker pull registry.fortidevsec.forticloud.com/fdevsec_dast:latest
+                docker run --rm --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest
                 '''
             }
         }
