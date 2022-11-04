@@ -6,5 +6,5 @@ id:
 
 dast:
   url: http://54.220.40.82:8000
-  fortipentest_scanner: false #true|false
+  fortipentest_scanner: true #true|false
   full_scan: true #true|false
