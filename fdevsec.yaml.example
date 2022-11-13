@@ -10,4 +10,4 @@ dast:
   full_scan: true #true|false
 
 fail_pipeline:
-  risk_rating: 8
+  risk_rating: <1-9>
