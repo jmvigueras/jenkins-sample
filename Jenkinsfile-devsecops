@@ -29,14 +29,14 @@ pipeline {
                 '''
             }
         }
-        stage('New VIP in Firewall') {
+        stage('New VIP in FW') {
             steps {
                 sh '''
                 echo "+ Creating new VIP in FGT"
                 '''
             }
         }
-        stage('Create new policy with') {
+        stage('Create new FW policy') {
             steps {
                 sh '''
                 echo "+ Creating new policiy in FGT"
