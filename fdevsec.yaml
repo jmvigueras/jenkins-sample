@@ -2,7 +2,7 @@ version: v1
 
 id:
   org: 6b3ab84a-465a-4087-9b62-f45d108b90bc
-  app: 2d4cdf0f-0a97-4ad1-87e7-e076924dec1f
+  app: aef24892-9d8b-4f37-9e6a-bf9cbf061575
 
 dast:
   url: http://jenkins.jvigueras-fortinet-site.com:8000
