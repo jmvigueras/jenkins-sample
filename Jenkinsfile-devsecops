@@ -29,6 +29,20 @@ pipeline {
                 '''
             }
         }
+        stage('New VIP in Firewall') {
+            steps {
+                sh '''
+                echo "+ Creating new VIP in FGT"
+                '''
+            }
+        }
+        stage('Create new policy with') {
+            steps {
+                sh '''
+                echo "+ Creating new policiy in FGT"
+                '''
+            }
+        }
         stage('DAST FortiPentest') {
             steps {
                 sh '''
