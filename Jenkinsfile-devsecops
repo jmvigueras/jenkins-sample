@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy image') {
             steps {
                 sh '''
-                docker run -p 8000:80 --rm -d --name web-server-python web-server-python
+                docker run -p 8001:80 --rm -d --name web-server-python web-server-python
                 '''
             }
         }
